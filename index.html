@@ -3,40 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Maisonny - Étudiant en BA3</title>
+    <title>Alex Maisonny - Accueil</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1 { color: #111; margin-bottom: 5px; }
-        .subtitle { color: #666; font-size: 1.1em; margin-bottom: 30px; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        section { margin-bottom: 40px; }
-        .project { border-left: 3px solid #0066cc; padding-left: 15px; margin-bottom: 15px; }
+        /* CSS : Style général */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Barre de navigation (les onglets) */
+        nav {
+            background-color: #1a252f;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #3498db;
+        }
+
+        /* Conteneur principal */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 40px;
+        }
+
+        h1 { color: #2c3e50; }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .btn:hover { background: #2980b9; }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Alex Maisonny</h1>
-    <div class="subtitle">Étudiant en BA3 en sciences mathématiques à l'ULB</div>
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="logo">Alex Maisonny</div>
+        <ul>
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="cv.html">Mon CV</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>À propos</h2>
-        <p>Bienvenue sur mon site personnel. Je suis actuellement en 3ème année de bachelier en Mathématiques. Je m'intéresse particulièrement à la géométrie différentielle, à l'analyse fonctionnelle et 
-            à la topologie algébrique.</p>
-    </section>
+    <!-- Contenu de la page -->
+    <main>
+        <h1>Bienvenue sur mon site</h1>
+        <p>Je suis étudiant en BA3 à l'université. Ce site présente mes travaux académiques, mon parcours et mes projets de recherche.</p>
+        <a href="projets.html" class="btn">Découvrir mes projets</a>
+    </main>
 
-    <section>
-        <h2>Projets & Travaux</h2>
-        <div class="project">
-            <strong>Travail de recherche</strong>
-            <p>Lecture de littérature sur le théorème de Borsuk-Ulam sous la supervision de Mr. Jean Gutt.</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Vous pouvez me contacter par email à <a href="mailto:mon.email@univ.edu">alex.maisonny@ulb.com</a>. </p>
-    </section>
+    <footer>
+        <p>© 2026 Alex Maisonny — Propulsé par GitHub Pages</p>
+    </footer>
 
 </body>
 </html>
